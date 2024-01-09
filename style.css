@@ -12,10 +12,6 @@ html, body {
     color: var(--fg);
 }
 
-* {
-    box-sizing: border-box;
-}
-
 h1 {
     text-align: center;
 }
@@ -26,18 +22,21 @@ h1 {
     grid-template-columns: 15% auto;
 }
 
-#navbar {
+.navbar {
     grid-area: navbar;
     height: 100vh;
     font-size: xx-large;
     border-right: 5px solid var(--fg);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
 }
 
 .page {
     grid-area: page;
 }
 
-#navbar ul {
+.navbar ul {
     list-style: none;
     align-items: stretch;
     height: 100%;
@@ -46,7 +45,7 @@ h1 {
     flex-direction: column;
 }
 
-#navbar a {
+.navbar a {
     display: flex;
     align-items: center;
     padding: 1em;
@@ -54,7 +53,7 @@ h1 {
     color: var(--fg);
 }
 
-#navbar a:hover {
+.navbar a:hover {
     background-color: var(--fg);
     color: var(--bg);
 }
