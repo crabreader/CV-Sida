@@ -1,0 +1,60 @@
+:root {
+    --bg: #000;
+    --fg: #0f0;
+}
+
+html, body {
+    font-family: 'Ubuntu Mono', monospace;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+    color: var(--fg);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'navbar page';
+    grid-template-columns: 15% auto;
+}
+
+#navbar {
+    grid-area: navbar;
+    height: 100vh;
+    font-size: xx-large;
+    border-right: 5px solid var(--fg);
+}
+
+.page {
+    grid-area: page;
+}
+
+#navbar ul {
+    list-style: none;
+    align-items: stretch;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar a {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    text-decoration: none;
+    color: var(--fg);
+}
+
+#navbar a:hover {
+    background-color: var(--fg);
+    color: var(--bg);
+}
