@@ -57,3 +57,39 @@ h1 {
     background-color: var(--fg);
     color: var(--bg);
 }
+
+.menu-button {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-areas: 
+                    'navbar'
+                    'page';
+        grid-template-columns: auto;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .navbar ul {
+        flex-direction: row;
+    }
+
+    .menu-button {
+        display: block;
+        font-size: xx-large;
+        background-color: var(--fg);
+        color: var(--bg);
+        padding: 1em;
+        border: none;
+        border-bottom: 5px solid var(--fg);
+    }
+
+    .menu-button:active {
+        background-color: var(--bg);
+        color: var(--fg);
+    }
+}
