@@ -69,8 +69,6 @@ main {
     color: var(--bg);
     border: 2px solid var(--bg);
     font-size: x-large;
-    right: 0;
-    position: absolute;
     margin: 1em;
     width: 2em;
     height: 2em;
