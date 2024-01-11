@@ -63,6 +63,24 @@ main {
     display: none;
 }
 
+.menu-close {
+    display: none;
+    background-color: var(--fg);
+    color: var(--bg);
+    border: 2px solid var(--bg);
+    font-size: x-large;
+    right: 0;
+    position: absolute;
+    margin: 1em;
+    width: 2em;
+    height: 2em;
+}
+
+.menu-close:active {
+    background-color: var(--bg);
+    color: var(--fg);
+}
+
 @media only screen and (max-width: 900px) {
     .grid-container {
         grid-template-areas: 
@@ -73,11 +91,32 @@ main {
 
     .navbar {
         display: none;
+        min-height: 100%;
+        min-width: 100%;
+        background-color: var(--fg);
+        color: var(--bg);
+    }
+
+    .navbar a {
+        color: var(--bg);
+    }
+
+    .navbar a:active {
+        background-color: var(--bg);
+        color: var(--fg);
     }
 
     .navbar ul {
-        flex-direction: row;
+        margin-top: 20%;
     }
+
+    .navbar li {
+        margin-left: 30%;
+    }
+
+    /* .navbar ul {
+        flex-direction: row;
+    } */
 
     .menu-button {
         display: block;
@@ -86,11 +125,15 @@ main {
         color: var(--bg);
         padding: 1em;
         border: none;
-        border-bottom: 5px solid var(--fg);
+        border: 5px solid var(--fg);
     }
 
     .menu-button:active {
         background-color: var(--bg);
         color: var(--fg);
+    }
+
+    .menu-close {
+        display: block;
     }
 }
