@@ -19,12 +19,12 @@ h1 {
 
 .grid-container {
     display: grid;
-    grid-template-areas: 'navbar page';
+    grid-template-areas: 'navbar main';
     grid-template-columns: 15% auto;
 }
 
-.page {
-    grid-area: page;
+main {
+    grid-area: main;
 }
 
 .navbar {
@@ -67,7 +67,7 @@ h1 {
     .grid-container {
         grid-template-areas: 
                     'navbar'
-                    'page';
+                    'main';
         grid-template-columns: auto;
     }
 
