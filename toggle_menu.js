@@ -1,8 +1,8 @@
 function toggleMenu() {
-    var x = document.getElementsByClassName("navbar");
-    if (x[0].style.display === "none") {
-        x[0].style.display = "block";
+    var x = document.getElementById("test");
+    if (x.style.display === "block") {
+        x.style.display = "none";
     } else {
-        x[0].style.display = "none";
+        x.style.display = "block";
     }
 }
