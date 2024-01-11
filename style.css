@@ -61,6 +61,8 @@ main {
 
 .menu-button {
     display: none;
+    position: sticky;
+    top: 0;
 }
 
 .menu-close {
