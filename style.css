@@ -1,7 +1,7 @@
 :root {
-    --bg: #000;
-    --fg: #0f0;
-    --active: #00f;
+    --bg: #000000;
+    --fg: #00ff00;
+    --active: #0000ff;
 }
 
 html, body {
