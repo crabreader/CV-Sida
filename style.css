@@ -47,8 +47,6 @@ main {
 }
 
 .navbar a {
-    display: flex;
-    align-items: center;
     padding: 1em;
     text-decoration: none;
     color: var(--fg);
