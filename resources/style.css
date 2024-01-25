@@ -1,0 +1,153 @@
+:root {
+    --bg: #000000;
+    --fg: #00ff00;
+    --active: #0000ff;
+}
+
+html, body {
+    font-family: 'Ubuntu Mono', monospace;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+    color: var(--fg);
+}
+
+main {
+    grid-area: main;
+    padding: 2em;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    font-size: large;
+}
+
+img {
+    display: block;
+    margin: auto;
+    border: 4px solid var(--fg);
+    width: 30vh;
+}
+
+hr {
+    color: var(--fg)
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'navbar main';
+    grid-template-columns: 15vh auto;
+}
+
+.navbar {
+    grid-area: navbar;
+    height: 100vh;
+    width: 15vh;
+    font-size: xx-large;
+    border-right: 5px solid var(--fg);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    align-items: stretch;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar a {
+    padding: 1em;
+    text-decoration: none;
+    color: var(--fg);
+}
+
+.navbar a:hover {
+    background-color: var(--fg);
+    color: var(--bg);
+}
+
+.menu-button {
+    display: none;
+    position: sticky;
+    top: 0;
+}
+
+.menu-close {
+    display: none;
+    background-color: var(--fg);
+    color: var(--bg);
+    border: 2px solid var(--bg);
+    font-size: x-large;
+    margin: 1em;
+    width: 2em;
+    height: 2em;
+}
+
+.menu-close:active {
+    background-color: var(--bg);
+    color: var(--fg);
+}
+
+@media only screen and (max-width: 900px) {
+    img {
+        width: 90%;
+    }
+    .grid-container {
+        grid-template-areas: 
+                    'navbar'
+                    'main';
+        grid-template-columns: auto;
+    }
+
+    .navbar {
+        display: none;
+        min-height: 100%;
+        min-width: 100%;
+        background-color: var(--fg);
+        color: var(--bg);
+    }
+
+    .navbar a {
+        color: var(--bg);
+    }
+
+    .navbar a:active {
+        background-color: var(--bg);
+        color: var(--fg);
+    }
+
+    .navbar ul {
+        margin-top: 20%;
+    }
+
+    .navbar li {
+        margin-left: 30%;
+    }
+
+    .menu-button {
+        display: block;
+        font-size: xx-large;
+        background-color: var(--fg);
+        color: var(--bg);
+        padding: 1em;
+        border: none;
+        border: 5px solid var(--fg);
+    }
+
+    .menu-button:active {
+        background-color: var(--bg);
+        color: var(--fg);
+    }
+
+    .menu-close {
+        display: block;
+    }
+}
