@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="se">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="resources/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+        <title>CV-Sida</title>
+    </head>
+    <body>
+        <div class="page-layout">
+            <button class="menu-button" onclick="toggleMenu()">Menu</button>
+            <nav class="navbar">
+                <button class="menu-close" onclick="toggleMenu()">X</button>
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="cv.html"><li>CV</li></a>
+                    <a href="portfolio.html"><li><span>></span>Portfolio</li></a>
+                    <a href="page_4.html"><li>Link 4</li></a>
+                    <a href="page_5.html"><li>Link 5</li></a>
+                </ul>
+            </nav>
+            <main>
+                <h1>Portfolio</h1>
+                <hr>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <h2>C# Övningar</h2>
+                        <hr>
+                        <p>Grundläggande programmering i C#.</p>
+                        <a href="https://github.com/crabreader/NET23">Github</a>
+                    </div>
+                    <div class="portfolio-item">
+                        <h2>Individuellt Databasprojekt</h2>
+                        <hr>
+                        <p>En databas med flera tabeller och en konsolapplikation för att interagera med databasen.</p>
+                        <a href="https://github.com/crabreader/Individuellt-databasprojekt">Github</a>
+                    </div>
+                    <div class="portfolio-item">
+                        <h2>Bank App</h2>
+                        <hr>
+                        <p>Jag medverkade i det här grupparbetet för att skapa ett enkelt banksystem.</p>
+                        <a href="https://github.com/ByteBears-NET23/UntitledBankApp">Github</a>
+                    </div>
+                    <div class="portfolio-item">
+                        <h2>CV-Sida</h2>
+                        <hr>
+                        <p>Den här webbsidan :)</p>
+                        <p>Skriven i HTML, CSS och Javascript.</p>
+                        <a href="https://github.com/crabreader/CV-Sida">Github</a>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script src="resources/main.js"></script>
+    </body>
+</html>
