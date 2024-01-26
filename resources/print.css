@@ -1,0 +1,24 @@
+* {
+    color: #000;
+    background-color: #fff;
+}
+
+main {
+    break-inside: avoid;
+    display: block;
+}
+
+.navbar {
+    display: none;
+}
+.page-layout {
+    grid-template-areas: 'main main';
+}
+
+.pagebreak {
+    page-break-before: always;
+}
+
+.portfolio-grid {
+    grid-template-columns: auto auto;
+}

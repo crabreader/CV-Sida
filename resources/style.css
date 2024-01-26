@@ -223,6 +223,12 @@ button:hover {
     }
 }
 
+@media only screen and (max-width: 1100px) {
+    .portfolio-grid {
+        grid-template-columns: auto auto;
+    }
+}
+
 @media only screen and (max-width: 900px) {
     img {
         width: 90%;
