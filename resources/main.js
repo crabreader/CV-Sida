@@ -64,8 +64,28 @@ function populateEducation(obj) {
     }
 }
 
-function easterEgg1(){
+function arrComp(a, b) {
+    return a.length === b.length && a.every((element, index) => element === b[index])
+}
+
+function easterEgg1() {
     const root = document.querySelector(":root");
     root.style.setProperty('--bg', 'blue');
     root.style.setProperty('--fg', 'red');
+}
+
+function easterEgg2(targetSequence) {
+    const userSequence = [];
+
+    document.addEventListener("keydown", (e) => {
+        userSequence.push(e.key);
+
+        if (arrComp(targetSequence, userSequence)) {
+            alert(":)");
+        }    
+
+        if (userSequence.length > 3) {
+            userSequence.shift();
+        }
+    });
 }
