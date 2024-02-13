@@ -217,6 +217,13 @@ button:hover {
     text-align: center;
 }
 
+#easter-egg-1 {
+    color: red;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
 @media only screen and (min-width: 1500px) {
     .portfolio-grid {
         grid-template-columns: auto auto auto auto;

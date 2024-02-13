@@ -63,3 +63,9 @@ function populateEducation(obj) {
         eduSection.appendChild(description);
     }
 }
+
+function easterEgg1(){
+    const root = document.querySelector(":root");
+    root.style.setProperty('--bg', 'blue');
+    root.style.setProperty('--fg', 'red');
+}
