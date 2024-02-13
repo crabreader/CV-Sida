@@ -1,9 +1,10 @@
 function toggleMenu() {
-    let x = document.getElementsByClassName("navbar");
-    if (x[0].style.display === "block") {
-        x[0].style.display = "none";
+    const x = document.querySelector(".navbar");
+
+    if (x.style.display === "block") {
+        x.style.display = "none";
     } else {
-        x[0].style.display = "block";
+        x.style.display = "block";
     }
 }
 
@@ -16,7 +17,7 @@ async function fetchCV() {
         populateEducation(cv);
 
     } catch (error) {
-        
+        // Handle error
     }
 }
 
