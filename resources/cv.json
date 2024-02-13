@@ -2,7 +2,7 @@
     "workExperience" : [
         {
             "roleName" : "Medlemsrådgivare",
-            "yearStart" : "2023",
+            "yearStart" : 2023,
             "yearEnd" : "",
             "companyName" : "Sportsgym",
             "location" : "Örnsköldsvik",
@@ -14,7 +14,7 @@
         },
         {
             "roleName" : "Fruktpackare",
-            "yearStart" : "2018",
+            "yearStart" : 2018,
             "yearEnd" : "",
             "companyName" : "Frukt på Jobbet",
             "location" : "Örnsköldsvik",
@@ -26,8 +26,8 @@
         },
         {
             "roleName" : "Tekniker",
-            "yearStart" : "2022",
-            "yearEnd" : "2023",
+            "yearStart" : 2022,
+            "yearEnd" : 2023,
             "companyName" : "Örncompaniet",
             "location" : "Örnsköldsvik",
             "experiences" : [
@@ -38,8 +38,8 @@
         },
         {
             "roleName" : "SFI-Lärare",
-            "yearStart" : "2021",
-            "yearEnd" : "2022",
+            "yearStart" : 2021,
+            "yearEnd" : 2022,
             "companyName" : "Arena Utbildning",
             "location" : "Örnsköldsvik",
             "experiences" : [
@@ -52,7 +52,7 @@
     "education" : [
         {
             "name" : "Systemutvecklare .NET med AI kompetens",
-            "yearStart" : "2023",
+            "yearStart" : 2023,
             "yearEnd" : "",
             "schoolName" : "Edugrade Yrkeshögskola",
             "location" : "Distans",
@@ -60,24 +60,24 @@
         },
         {
             "name" : "Japanska I - Distans",
-            "yearStart" : "2023",
-            "yearEnd" : "2024",
+            "yearStart" : 2023,
+            "yearEnd" : 2024,
             "schoolName" : "Högskolan Dalarna",
             "location" : "Distans",
             "description" : "Grundläggande utbildning i det Japanska språket. Färdigheter inom läsning, skrivning och hörförståelse."
         },
         {
             "name" : "Kandidatprogram i Datavetenskap",
-            "yearStart" : "2022",
-            "yearEnd" : "2023",
+            "yearStart" : 2022,
+            "yearEnd" : 2023,
             "schoolName" : "Umeå Universitet",
             "location" : "Umeå",
             "description" : "Som en del av utbildningen ingår kurser i programmering, datavetenskapliga principer, algebra och diskret matematik och även användarinteraktion/design"
         },
         {
             "name" : "Teknikprogrammet - Informations & mediateknik",
-            "yearStart" : "2018",
-            "yearEnd" : "2021",
+            "yearStart" : 2018,
+            "yearEnd" : 2021,
             "schoolName" : "Parkskolan",
             "location" : "Örnsköldsvik",
             "description" : "Gymnasial utbildning i svenska, engelska, matematik och fysik m.m. Inriktningen innehöll undervisning i datorkunskap, webbutveckling, programmering och mycket annat."
