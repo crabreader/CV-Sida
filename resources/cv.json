@@ -1,62 +1,86 @@
 {
-    "arbetslivserfarenhet" : [
+    "workExperience" : [
         {
-            "titel" : "Medlemsrådgivare",
-            "info" : "2023- Sportsgym, Örnsköldsvik",
-            "erfarenheter" : [
+            "roleName" : "Medlemsrådgivare",
+            "yearStart" : "2023",
+            "yearEnd" : "",
+            "companyName" : "Sportsgym",
+            "location" : "Örnsköldsvik",
+            "experiences" : [
                 "Sälja gymkort",
                 "Hantera personuppgifter",
                 "Kundkontakt och hantering av kritisk information"
             ]
         },
         {
-            "titel" : "Fruktpackare",
-            "info" : "2018- Frukt på Jobbet, Örnsköldsvik",
-            "erfarenheter" : [
+            "roleName" : "Fruktpackare",
+            "yearStart" : "2018",
+            "yearEnd" : "",
+            "companyName" : "Frukt på Jobbet",
+            "location" : "Örnsköldsvik",
+            "experiences" : [
                 "Paketera fruktkorgar",
                 "Detaljnoggrannhet med placering, vikter och antal m.m.",
                 "Kunna ta ansvar och samarbeta i ett lag"
             ]
         },
         {
-            "titel" : "Tekniker",
-            "info" : "2022-2023 Örncompaniet, Örnsköldsvik",
-            "erfarenheter" : [
+            "roleName" : "Tekniker",
+            "yearStart" : "2022",
+            "yearEnd" : "2023",
+            "companyName" : "Örncompaniet",
+            "location" : "Örnsköldsvik",
+            "experiences" : [
                 "Installera hårdvara som driver reklamskärmar",
                 "Redigera bilder och sätta ihop reklamklipp",
                 "Tekniska färdigheter"
             ]
         },
         {
-            "titel" : "SFI-Lärare",
-            "info" : "2021-2022 Arena Utbildning, Örnsköldsvik",
-            "erfarenheter" : [
+            "roleName" : "SFI-Lärare",
+            "yearStart" : "2021",
+            "yearEnd" : "2022",
+            "companyName" : "Arena Utbildning",
+            "location" : "Örnsköldsvik",
+            "experiences" : [
                 "Undervisa svenska",
                 "Planera lektioner",
                 "Färdigheter i organisering och översikt"
             ]
         }
     ],
-    "utbildning" : [
+    "education" : [
         {
-            "namn" : "Systemutvecklare .NET med AI kompetens",
-            "info" : "2023- Edugrade Yrkeshögskola, Distans",
-            "beskrivning" : "Systemutveckling i Microsofts utvecklingsmiljö, objektorienterad programmering i C# och databashantering med Microsoft SQL Server med mera."
+            "name" : "Systemutvecklare .NET med AI kompetens",
+            "yearStart" : "2023",
+            "yearEnd" : "",
+            "schoolName" : "Edugrade Yrkeshögskola",
+            "location" : "Distans",
+            "description" : "Systemutveckling i Microsofts utvecklingsmiljö, objektorienterad programmering i C# och databashantering med Microsoft SQL Server med mera."
         },
         {
-            "namn" : "Japanska I - Distans",
-            "info" : "2023-2024 Högskolan Dalarna, Distans",
-            "beskrivning" : "Grundläggande utbildning i det Japanska språket. Färdigheter inom läsning, skrivning och hörförståelse."
+            "name" : "Japanska I - Distans",
+            "yearStart" : "2023",
+            "yearEnd" : "2024",
+            "schoolName" : "Högskolan Dalarna",
+            "location" : "Distans",
+            "description" : "Grundläggande utbildning i det Japanska språket. Färdigheter inom läsning, skrivning och hörförståelse."
         },
         {
-            "namn" : "Kandidatprogram i Datavetenskap",
-            "info" : "2022-2023 Umeå Universitet, Umeå",
-            "beskrivning" : "Som en del av utbildningen ingår kurser i programmering, datavetenskapliga principer, algebra och diskret matematik och även användarinteraktion/design"
+            "name" : "Kandidatprogram i Datavetenskap",
+            "yearStart" : "2022",
+            "yearEnd" : "2023",
+            "schoolName" : "Umeå Universitet",
+            "location" : "Umeå",
+            "description" : "Som en del av utbildningen ingår kurser i programmering, datavetenskapliga principer, algebra och diskret matematik och även användarinteraktion/design"
         },
         {
-            "namn" : "Teknikprogrammet - Informations & mediateknik",
-            "info" : "2018-2021 Parkskolan, Örnsköldsvik",
-            "beskrivning" : "Gymnasial utbildning i svenska, engelska, matematik och fysik m.m. Inriktningen innehöll undervisning i datorkunskap, webbutveckling, programmering och mycket annat."
+            "name" : "Teknikprogrammet - Informations & mediateknik",
+            "yearStart" : "2018",
+            "yearEnd" : "2021",
+            "schoolName" : "Parkskolan",
+            "location" : "Örnsköldsvik",
+            "description" : "Gymnasial utbildning i svenska, engelska, matematik och fysik m.m. Inriktningen innehöll undervisning i datorkunskap, webbutveckling, programmering och mycket annat."
         }
     ]
 }
