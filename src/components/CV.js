@@ -12,8 +12,8 @@ class CV extends Component {
         return (
             <>
                 <div className='page-layout'>
-                    <Navbar />
                     <MenuButton />
+                    <Navbar />
                     <main>
                         <h1>CV</h1>
                         <br />

@@ -16,8 +16,8 @@ class Mystery extends Component {
         return (
             <>
                 <div className='page-layout'>
-                    <Navbar />
                     <MenuButton />
+                    <Navbar />
                     <main>
                         <h1>???</h1>
                         <div class="gifs">

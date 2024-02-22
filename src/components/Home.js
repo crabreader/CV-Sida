@@ -8,8 +8,8 @@ function Home() {
     return (
         <>
             <div className='page-layout'>
-                <Navbar />
                 <MenuButton />
+                <Navbar />
                 <main className="home-content">
                     <h1>Välkommen till min webbsida!</h1>
                     <br />
