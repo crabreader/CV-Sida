@@ -301,6 +301,12 @@ button:hover {
         grid-template-columns: auto;
     }
 
+    .loading {
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+
     .gifs {
         flex-direction: column;
     }
