@@ -1,17 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { toggleMenu } from "../resources/main";
 
 function Navbar() {
     return (
         <nav className="navbar" id="test">
-            <button className="menu-close" onClick={toggleMenu}>X</button>
+            <button className="menu-close" onClick={toggleMenu} >X</button>
             <ul>
-                <Link to={`/`}><li>Hem</li></Link>
-                <Link to={`/cv`}><li>CV</li></Link>
-                <Link to={`/portfolio`}><li>Portfolio</li></Link>
-                <Link to={`/hmm`}><li>???</li></Link>
-                <Link to={`/lorem`}><li>Lorem</li></Link>
+                <NavLink to={`/`}><li>Hem</li></NavLink>
+                <NavLink to={`/cv`}><li>CV</li></NavLink>
+                <NavLink to={`/portfolio`}><li>Portfolio</li></NavLink>
+                <NavLink to={`/hmm`}><li>???</li></NavLink>
+                <NavLink to={`/lorem`}><li>Lorem</li></NavLink>
             </ul>
         </nav>
     )

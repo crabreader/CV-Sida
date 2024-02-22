@@ -230,6 +230,15 @@ button:hover {
     position: fixed;
 }
 
+.active {
+    background-color: var(--fg);
+    color: var(--bg);
+}
+
+.active li {
+    color: var(--bg);
+}
+
 @media only screen and (min-width: 1500px) {
     .portfolio-grid {
         grid-template-columns: repeat(4, 1fr);
