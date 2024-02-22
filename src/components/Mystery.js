@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from "react";
+import React, { Component } from "react";
 import Navbar from "./Navbar";
 import MenuButton from "./MenuButton";
 import milk from "../assets/15.gif";

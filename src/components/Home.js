@@ -1,5 +1,5 @@
 import React from "react";
-import portrait from '../assets/DSC_1607.jpg'
+import portrait from '../assets/portrait.jpg'
 import { easterEgg1 } from '../resources/main'
 import Navbar from "./Navbar";
 import MenuButton from "./MenuButton";
