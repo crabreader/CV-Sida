@@ -1,4 +1,5 @@
-function toggleMenu() {
+export function toggleMenu() {
+    console.log("toggleMenu called");
     const x = document.querySelector(".navbar");
 
     if (x.style.display === "block") {
@@ -8,16 +9,16 @@ function toggleMenu() {
     }
 }
 
-async function fetchCV() {
+export async function fetchCV() {
     try {
-        const response = await fetch('resources/cv.json');
+        const response = await fetch('./cv.json');
         const cv = await response.json();
 
         populateJobs(cv);
         populateEducation(cv);
 
     } catch (error) {
-        // Handle error
+        console.error('Error fetching CV:', error);
     }
 }
 
@@ -69,13 +70,13 @@ function arrComp(a, b) {
     return a.length === b.length && a.every((element, index) => element === b[index])
 }
 
-function easterEgg1() {
+export function easterEgg1() {
     const root = document.querySelector(":root");
     root.style.setProperty('--bg', 'blue');
     root.style.setProperty('--fg', 'red');
 }
 
-function easterEgg2(targetSequence) {
+export function easterEgg2(targetSequence) {
     const userSequence = [];
 
     document.addEventListener("keydown", (e) => {

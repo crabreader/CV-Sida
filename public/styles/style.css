@@ -128,13 +128,13 @@ button:hover {
 .page-layout {
     display: grid;
     grid-template-areas: 'navbar main';
-    grid-template-columns: 20vh auto;
+    grid-template-columns: 15vw auto;
 }
 
 .navbar {
     grid-area: navbar;
     height: 100vh;
-    width: 20vh;
+    width: 15vw;
     font-size: xx-large;
     border-right: 5px solid var(--fg);
     overflow: hidden;
