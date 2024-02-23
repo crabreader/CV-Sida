@@ -10,7 +10,7 @@ function Navbar() {
                 <NavLink to={`/`}><li>Hem</li></NavLink>
                 <NavLink to={`/cv`}><li>CV</li></NavLink>
                 <NavLink to={`/portfolio`}><li>Portfolio</li></NavLink>
-                <NavLink to={`/hmm`}><li>???</li></NavLink>
+                <NavLink to={`/mystery`}><li>???</li></NavLink>
                 <NavLink to={`/lorem`}><li>Lorem</li></NavLink>
             </ul>
         </nav>

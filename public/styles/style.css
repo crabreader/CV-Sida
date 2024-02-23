@@ -50,6 +50,7 @@ button {
 button:hover {
     background-color: var(--fg);
     color: var(--bg);
+    border: 2px solid var(--bg);
 }
 
 .button {
@@ -174,6 +175,38 @@ button:hover {
     color: var(--bg);
 }
 
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    display: flex;
+    justify-content: center; /* horizontally center */
+    align-items: center; /* vertically center */
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--fg);
+    color: var(--bg);
+    font-size: larger;
+    padding: 2em;
+    width: 200px;
+    animation-name: modal-scale;
+    animation-duration: 0.5s;
+}
+
+.modal-close-button {
+    font-size: x-large;
+    width: 1.5em;
+    height: 1.5em;
+}
+
 @media only screen and (min-width: 1500px) {
     .portfolio-grid {
         grid-template-columns: repeat(4, 1fr);
@@ -254,4 +287,13 @@ button:hover {
     .gifs {
         flex-direction: column;
     }
+
+    .modal {
+        width: 60%;
+    }
+}
+
+@keyframes modal-scale {
+    from {transform: translate(-50%, -50%) scale(0)}
+    to {transform: translate(-50%, -50%) scale(1);}
 }

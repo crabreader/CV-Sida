@@ -55,8 +55,8 @@ class Mystery extends Component {
                         </div>
 
                         <Modal isOpen={isModalOpen} onClose={this.closeModal}>
-                            <h2>Modal header</h2>
-                            <p>Modal content</p>
+                            <h2>:)</h2>
+                            <p>Bra jobbat!</p>
                         </Modal>
                     </main>
                 </div>
