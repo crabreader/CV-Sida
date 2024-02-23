@@ -65,66 +65,6 @@ button:hover {
     color: var(--bg);
 }
 
-.button-wrapper {
-    margin: 2em;
-}
-
-.content a {
-    color: var(--active) !important;
-}
-
-.overlay {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-    left: 0;
-    right: 0;
-    visibility: hidden;
-
-  .cancel {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    cursor: default;
-  }
-  &:target {
-    visibility: visible;
-  }
-}
-
-.popup {
-    left: 0;
-    right: 0;
-    top: 15vh;
-	margin: 10% auto;
-	padding: 1em;
-	background-color: var(--fg);
-    color: var(--bg);
-	width: 30vh;
-	position: fixed;
-
-  .close {
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        top: 20px;
-        right: 20px;
-        text-decoration: none;
-        border: 2px solid var(--bg);
-        color: var(--bg);
-  }
-
-  .close:hover {
-        background-color: var(--bg);
-        color: var(--fg);
-  }
-
-  .content {
-    max-height: 400px;
-    overflow: auto;
-  }
-}
-
 .page-layout {
     display: grid;
     grid-template-areas: 'navbar main';
@@ -205,12 +145,7 @@ button:hover {
 
 .gifs {
     display: flex;
-    gap: 1em;
-    margin-top: 10vh;
-}
-
-.gifs img {
-    display: inline;
+    margin-top: 2em;
 }
 
 .home-content {

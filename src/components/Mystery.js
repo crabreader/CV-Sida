@@ -4,15 +4,43 @@ import MenuButton from "./MenuButton";
 import milk from "../assets/15.gif";
 import balls from "../assets/22.gif";
 import spiral from "../assets/28.gif";
-import { easterEgg2 } from "../resources/main";
+import Modal from "./Modal";
 
 class Mystery extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isModalOpen: false,
+            userSequence: []
+        };
+        this.targetSequence = ['1', '3', '3', '7'];
+    }
+
+    closeModal = () => {
+        this.setState({ isModalOpen: false});
+    };
+
+    handleKeyDown = (event) => {
+        const pressedKeys = this.state.userSequence;
+        const target = this.targetSequence;
+        
+        pressedKeys.push(event.key);
+        if (pressedKeys.length > 4) {
+            pressedKeys.shift();
+        }
+
+        if (pressedKeys.length === target.length && pressedKeys.every((element, index) => element === target[index])) {
+            this.setState({ isModalOpen: true});
+        }
+    }
 
     componentDidMount() {
-        easterEgg2(['1', '3', '3', '7']);
+        document.addEventListener('keydown', this.handleKeyDown);
     }
 
     render () {
+        const { isModalOpen } = this.state;
+
         return (
             <>
                 <div className='page-layout'>
@@ -20,11 +48,16 @@ class Mystery extends Component {
                     <Navbar />
                     <main>
                         <h1>???</h1>
-                        <div class="gifs">
+                        <div className="gifs">
                             <img src={milk} alt="snurrande mjölk" />
                             <img src={balls} alt="ringar och bollar som snurrar" />
                             <img src={spiral} alt="en spiral som snurrar" />
                         </div>
+
+                        <Modal isOpen={isModalOpen} onClose={this.closeModal}>
+                            <h2>Modal header</h2>
+                            <p>Modal content</p>
+                        </Modal>
                     </main>
                 </div>
             </>
