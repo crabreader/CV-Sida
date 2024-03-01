@@ -149,6 +149,11 @@ button:hover {
     margin-top: 2em;
 }
 
+.gifs img {
+    margin-bottom: 2em;
+}
+
+
 .home-content {
     text-align: center;
 }
